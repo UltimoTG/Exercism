@@ -5,9 +5,8 @@ const COMPLEMENTS = {
   A: 'U',
 };
 
-export const toRna = dnaString => {
-  return dnaString
+export const toRna = dnaString =>
+  dnaString
     .split('')
     .map(nucleotide => COMPLEMENTS[nucleotide])
     .join('');
-};
